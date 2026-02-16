@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Link from "next/link";
 import { Code2, Briefcase, GraduationCap, Award, Users, Globe } from 'lucide-react';
 import { ScrollAnimation } from '@/components/ScrollAnimation';
 
@@ -83,20 +84,20 @@ const About = () => {
 
 					<ScrollAnimation>
 						<div className="flex justify-start space-x-4">
-							<a
+							<Link
 								href="/files/cv_pdf/Niladri_Chatterjee(CV).pdf"
 								target="_blank"
 								rel="noopener noreferrer"
 								className="px-6 py-3 bg-white text-black rounded-full font-medium hover:bg-gray-100 transition-colors"
 							>
 								Download CV
-							</a>
-							<a
+							</Link>
+							<Link
 								href="/skills"
 								className="px-6 py-3 bg-white/10 text-white rounded-full font-medium hover:bg-white/20 transition-colors"
 							>
 								My Skills
-							</a>
+							</Link>
 						</div>
 					</ScrollAnimation>
 				</ScrollAnimation>

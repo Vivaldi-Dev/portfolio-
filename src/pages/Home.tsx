@@ -77,7 +77,7 @@ const Home = () => {
 					transition={{ duration: 0.8, delay: 0.4 }}
 				>
 					<div className="flex justify-center space-x-3 sm:space-x-4">
-						<a
+						<Link
 							href="/files/cv_pdf/Niladri_Chatterjee(CV).pdf"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -85,7 +85,7 @@ const Home = () => {
 						>
 							<FileDown className="w-4 h-4 sm:w-5 sm:h-5" />
 							Download CV
-						</a>
+						</Link>
 						<Link
 							href="/about"
 							className="px-4 sm:px-6 py-2.5 sm:py-3 bg-white/10 text-white rounded-full text-sm sm:text-base font-medium hover:bg-white/20 transition-colors flex items-center gap-2"
@@ -159,7 +159,7 @@ const Home = () => {
 							animate={{ opacity: 1 }}
 							transition={{ delay: 0.8 }}
 						>
-							<span className="text-base sm:text-lg font-semibold">1500+</span>
+							<span className="text-base sm:text-lg font-semibold">4000+</span>
 							<span className="text-xs sm:text-sm text-gray-400">LinkedIn Followers</span>
 						</motion.div>
 					</motion.a>

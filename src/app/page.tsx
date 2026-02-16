@@ -1,19 +1,18 @@
-'use client';
+"use client";
 
-import { Suspense } from 'react';
-import dynamic from 'next/dynamic';
-import Loading from '@/components/Loading';
+import { Suspense } from "react";
+import dynamic from "next/dynamic";
+import Loading from "@/components/Loading";
 
-const Home = dynamic(() => import('@/pages/Home'), {
-	loading: () => <Loading />,
-	ssr: false,
-	suspense: true,
+const Home = dynamic(() => import("@/pages/Home"), {
+  loading: () => <Loading />,
+  ssr: false,
 });
 
 export default function HomePage() {
-	return (
-		<Suspense fallback={<Loading />}>
-			<Home />
-		</Suspense>
-	);
+  return (
+    <Suspense fallback={<Loading />}>
+      <Home />
+    </Suspense>
+  );
 }
