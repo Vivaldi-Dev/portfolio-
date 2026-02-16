@@ -7,93 +7,83 @@ import {
 } from 'lucide-react';
 import { ScrollAnimation } from '@/components/ScrollAnimation';
 import {
-	CppLogo, PythonLogo, JavaScriptLogo, HTML5Logo,
-	CSSLogo, ReactLogo, TypeScriptLogo, NodeLogo, MySQLLogo,
-	MongoDBLogo, VSCodeLogo, GitLogo, TailwindLogo, ShadCNLogo, NextjsLogo,
+	JavaScriptLogo, HTML5Logo,
+	CSSLogo, ReactLogo, TypeScriptLogo, NodeLogo,
+	MongoDBLogo, VSCodeLogo, GitLogo, TailwindLogo, NextjsLogo,
 	VirtualBoxLogo, VercelLogo
 } from '@/components/TechLogos';
 
 const skills = [
-	{
-		category: 'Programming Languages',
-		icon: <Code2 className="w-6 h-6" />,
-		items: [
-			{ name: 'C++', icon: <CppLogo /> },
-			{ name: 'Python', icon: <PythonLogo /> },
-			{ name: 'JavaScript', icon: <JavaScriptLogo /> },
-			{ name: 'TypeScript', icon: <TypeScriptLogo /> }
-		]
-	},
-	{
-		category: 'Front-End Development',
-		icon: <Layout className="w-6 h-6" />,
-		items: [
-			{ name: 'HTML5', icon: <HTML5Logo /> },
-			{ name: 'CSS3', icon: <CSSLogo /> },
-			{ name: 'Tailwind', icon: <TailwindLogo /> },
-			{ name: 'ShadCN', icon: <ShadCNLogo /> }
-		]
-	},
-	{
-		category: 'Back-End Development',
-		icon: <Server className="w-6 h-6" />,
-		items: [
-			{ name: 'React.js', icon: <ReactLogo /> },
-			{ name: 'Node.js', icon: <NodeLogo /> },
-			{ name: 'Next.js', icon: <NextjsLogo /> },
-			{ name: 'TypeScript', icon: <TypeScriptLogo /> }
-		]
-	},
-	{
-		category: 'Databases & Cloud Storage',
-		icon: <Database className="w-6 h-6" />,
-		items: [
-			{ name: 'MySQL', icon: <MySQLLogo /> },
-			{ name: 'MongoDB', icon: <MongoDBLogo /> },
-			{ name: 'Cloudinary', icon: <Cloud className="w-4 h-4" /> },
-			{ name: 'NoSQL', icon: <Database className="w-4 h-4" /> }
-		]
-	},
-	{
-		category: 'Version Control & DevOps',
-		icon: <GitLogo />,
-		items: [
-			{ name: 'Git', icon: <GitLogo /> },
-			{ name: 'GitHub', icon: <GitLogo /> },
-			{ name: 'Vercel', icon: <VercelLogo /> },
-			{ name: 'CI/CD', icon: <Code2 /> }
-		]
-	},
-	{
-		category: 'Tools & Platforms',
-		icon: <Wrench className="w-6 h-6" />,
-		items: [
-			{ name: 'VS Code', icon: <VSCodeLogo /> },
-			{ name: 'Workbench', icon: <MySQLLogo /> },
-			{ name: 'Compass', icon: <MongoDBLogo /> },
-			{ name: 'VirtualBox', icon: <VirtualBoxLogo /> }
-		]
-	},
-	{
-		category: 'Operating Systems',
-		icon: <Terminal className="w-6 h-6" />,
-		items: [
-			{ name: 'Windows', icon: <Terminal className="w-4 h-4" /> },
-			{ name: 'Ubuntu', icon: <Terminal className="w-4 h-4" /> },
-			{ name: 'Linux', icon: <Terminal className="w-4 h-4" /> },
-			{ name: 'Parrot OS', icon: <Terminal className="w-4 h-4" /> }
-		]
-	},
-	{
-		category: 'Soft Skills',
-		icon: <Brain className="w-6 h-6" />,
-		items: [
-			{ name: 'Teamwork', icon: <Users className="w-4 h-4" /> },
-			{ name: 'Troubleshooting', icon: <Wrench className="w-4 h-4" /> },
-			{ name: 'Progressive', icon: <Lightbulb className="w-4 h-4" /> },
-			{ name: 'Communication', icon: <MessageSquare className="w-4 h-4" /> }
-		]
-	}
+  {
+    category: "Programming Languages",
+    icon: <Code2 className="w-6 h-6" />,
+    items: [
+      { name: "JavaScript", icon: <JavaScriptLogo /> },
+      { name: "TypeScript", icon: <TypeScriptLogo /> },
+    ],
+  },
+  {
+    category: "Front-End Development",
+    icon: <Layout className="w-6 h-6" />,
+    items: [
+      { name: "HTML5", icon: <HTML5Logo /> },
+      { name: "CSS3", icon: <CSSLogo /> },
+      { name: "Tailwind", icon: <TailwindLogo /> },
+    ],
+  },
+  {
+    category: "Back-End Development",
+    icon: <Server className="w-6 h-6" />,
+    items: [
+      { name: "React.js", icon: <ReactLogo /> },
+      { name: "Node.js", icon: <NodeLogo /> },
+      { name: "Next.js", icon: <NextjsLogo /> },
+    ],
+  },
+  {
+    category: "Databases & Cloud Storage",
+    icon: <Database className="w-6 h-6" />,
+    items: [
+      { name: "MongoDB", icon: <MongoDBLogo /> },
+      { name: "Cloudinary", icon: <Cloud className="w-4 h-4" /> },
+    ],
+  },
+  {
+    category: "Version Control & DevOps",
+    icon: <GitLogo />,
+    items: [
+      { name: "Git", icon: <GitLogo /> },
+      { name: "GitHub", icon: <GitLogo /> },
+      { name: "Vercel", icon: <VercelLogo /> },
+    ],
+  },
+  {
+    category: "Tools & Platforms",
+    icon: <Wrench className="w-6 h-6" />,
+    items: [
+      { name: "VS Code", icon: <VSCodeLogo /> },
+      { name: "Compass", icon: <MongoDBLogo /> },
+      { name: "VirtualBox", icon: <VirtualBoxLogo /> },
+    ],
+  },
+  {
+    category: "Operating Systems",
+    icon: <Terminal className="w-6 h-6" />,
+    items: [
+      { name: "Windows", icon: <Terminal className="w-4 h-4" /> },
+      { name: "Ubuntu", icon: <Terminal className="w-4 h-4" /> },
+      { name: "Linux", icon: <Terminal className="w-4 h-4" /> },
+    ],
+  },
+  {
+    category: "Soft Skills",
+    icon: <Brain className="w-6 h-6" />,
+    items: [
+      { name: "Teamwork", icon: <Users className="w-4 h-4" /> },
+      { name: "Communication", icon: <MessageSquare className="w-4 h-4" /> },
+      { name: "Debugging", icon: <Wrench className="w-4 h-4" /> },
+    ],
+  },
 ];
 
 const Skills = () => {

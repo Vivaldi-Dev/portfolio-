@@ -16,10 +16,16 @@ const nextConfig = {
       },
       {
         protocol: "https",
+        hostname: "api.github.com",
+      },
+      {
+        protocol: "https",
         hostname: "**",
       },
     ],
     formats: ["image/webp", "image/avif"],
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
   },
   headers: async () => {
     return [
@@ -39,6 +45,19 @@ const nextConfig = {
             key: "Permissions-Policy",
             value:
               "camera=(), microphone=(), geolocation=(), interest-cohort=()",
+          },
+          {
+            key: "Content-Security-Policy",
+            value: [
+              "default-src 'self'",
+              // Added 'unsafe-inline' here to allow Vercel and Next.js internal scripts to execute
+              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://vercel.live https://va.vercel-scripts.com",
+              "style-src 'self' 'unsafe-inline'",
+              "img-src 'self' data: https:",
+              "font-src 'self' data:",
+              "connect-src 'self' https://api.github.com https://vitals.vercel-insights.com https://va.vercel-scripts.com",
+              "frame-ancestors 'self'",
+            ].join("; "),
           },
         ],
       },
