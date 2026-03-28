@@ -7,66 +7,55 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { ScrollAnimation } from "@/components/ScrollAnimation";
-import codeAlphaImg from "@/assets/experience/codeAlpha_page.jpg";
-import bharatInternImg from "@/assets/experience/bharatIntern_page.jpg";
-import codeClauseImg from "@/assets/experience/codeClause_page.jpg";
-import oasisInfobyteImg from "@/assets/experience/oasisInfobyte_page.jpg";
-import codeAlphaPdf from "@/assets/files/experience_pdf/codeAlpha.pdf";
-import bharatInternPdf from "@/assets/files/experience_pdf/bharatIntern.pdf";
-import codeClausePdf from "@/assets/files/experience_pdf/codeClause.pdf";
-import oasisInfobytePdf from "@/assets/files/experience_pdf/oasisInfobyte.pdf";
+
 
 const experiences = [
   {
-    title: "Software Engineering Intern",
-    company: "Code Alpha",
-    location: "Remote",
-    period: "Jun 2024 - Aug 2024",
-    type: "Internship",
-    image: codeAlphaImg,
-    certificateUrl: codeAlphaPdf,
+    title: "Full Stack Developer",
+    company: "JS Technology",
+    location: "Maputo, Mozambique",
+    period: "Mar 2023 - May 2023",
+    type: "Full-time",
     description: [
-      "Optimized web application performance with JavaScript and React.js, achieving a 98% error-free rate",
-      "Implemented advanced features on a React.js platform, resulting in a 40% surge in user interaction",
+      "Developed and maintained RESTful APIs using Django (Python) and Spring Boot (Java), ensuring scalability and performance",
+      "Built modern frontend applications with Next.js, focusing on user experience and responsiveness",
+      "Designed optimized database architectures using PostgreSQL, MySQL, and MongoDB",
     ],
   },
   {
-    title: "Full Stack Development Intern",
-    company: "Bharat Intern",
-    location: "Remote",
-    period: "Jun 2024 - Jul 2024",
-    type: "Internship",
-    image: bharatInternImg,
-    certificateUrl: bharatInternPdf,
+    title: "Full Stack Developer",
+    company: "Panorama Tours",
+    location: "Maputo, Mozambique",
+    period: "Apr 2025 - May 2025",
+    type: "Contract",
     description: [
-      "Designed 3 websites with CSS, JavaScript, React.js, Node.js and MongoDB, resulting in a 30% increase in user engagement",
-      "Built a money tracker app using HTML, CSS, React.js, Node.js, and MongoDB, improving user financial tracking by 25%",
+      "Built a full-stack flight search platform integrating the Amadeus API for real-time data",
+      "Developed backend services with Node.js and a responsive frontend with Next.js",
+      "Implemented secure authentication and session management",
     ],
   },
   {
-    title: "Web Applications Intern",
-    company: "CodeClause",
-    location: "Remote",
-    period: "Jun 2023 - Jul 2023",
-    type: "Internship",
-    image: codeClauseImg,
-    certificateUrl: codeClausePdf,
+    title: "Backend Developer",
+    company: "Atlantic Travel",
+    location: "Maputo, Mozambique",
+    period: "May 2025",
+    type: "Contract",
     description: [
-      "Engineered a real-time collaborative document editor using Next.js, TypeScript, and Liveblocks, reducing latency by 30%",
-      "Implemented and optimized a personal portfolio with Next.js and Tailwind CSS, improving performance by 40%",
+      "Developed an attendance management system using Node.js and PostgreSQL",
+      "Implemented secure authentication using JWT and optimized data handling with Sequelize ORM",
+      "Designed scalable APIs and automated reporting features",
     ],
   },
   {
-    title: "Junior Web Developer",
-    company: "Oasis Infobyte",
-    location: "Remote",
-    period: "Jun 2023 - Jul 2023",
-    type: "Internship",
-    image: oasisInfobyteImg,
-    certificateUrl: oasisInfobytePdf,
+    title: "Cloud & DevOps Engineer",
+    company: "BlueString",
+    location: "Maputo, Mozambique",
+    period: "2026 - Present",
+    type: "Full-time",
     description: [
-      "Engineered a real-time collaborative document editor using Next.js, TypeScript, and Liveblocks, reducing latency by 30%",
-      "Implemented and optimized a personal portfolio with Next.js and Tailwind CSS, improving performance by 40%",
+      "Designed and managed cloud infrastructure using Docker and Kubernetes",
+      "Implemented CI/CD pipelines with GitHub Actions for automated deployments",
+      "Configured monitoring and observability using Prometheus and Grafana",
     ],
   },
 ];
@@ -132,28 +121,7 @@ const Experience = () => {
                   </motion.a>
                 </div>
 
-                <div className="relative hidden md:block">
-                  <div className="absolute inset-0 group-hover:scale-105 transition-transform duration-500">
-                    <img
-                      src={exp.image}
-                      alt={exp.company}
-                      className="w-full h-full object-cover"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-r from-gray-800/80 to-transparent" />
-                  </div>
-                  <div className="relative h-full flex items-center justify-center">
-                    <motion.a
-                      href={exp.certificateUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="px-8 py-3 text-white font-bold bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-xl flex items-center gap-2 transition-all duration-300 hover:scale-105 border border-white/10 hover:border-white/20"
-                      whileHover={{ y: -5 }}
-                    >
-                      View Certificate
-                      <ExternalLink className="w-4 h-4" />
-                    </motion.a>
-                  </div>
-                </div>
+                
               </div>
             </div>
           </ScrollAnimation>

@@ -7,57 +7,83 @@ import project4 from "@/assets/projects_img/project-4.png";
 
 const projects = [
   {
-    title: "E-Mail Spam Detector",
+    title: "Ntizu - Job Search Platform",
     description:
-      "AI-powered Gmail client that detects spam, summarises emails, and lets you chat with your inbox — built with React, Node.js & Gemini API.",
-    image: project4,
-    github: "https://github.com/niladri-1/EMail-Spam-Detector",
-    live: "https://spam-detector1.vercel.app",
-    tags: [
-      "MongoDB",
-      "Express",
-      "React",
-      "Node",
-      "JavaScript",
-      "Gmail API",
-      "OAuth2",
-    ],
-  },
-  {
-    title: "Book Store",
-    description:
-      "A modern Book Management System built with the MERN stack (React 19 & Tailwind 4.0). Features secure JWT authentication, protected routes, and full CRUD functionality.",
-    image: project3,
-    github: "https://github.com/niladri-1/Bookstore-Auth-MERN",
-    live: "https://curd-auth-app.vercel.app",
-    tags: [
-      "MongoDB",
-      "Express",
-      "React",
-      "Node",
-      "Tailwind",
-      "JWT",
-      "Bcrypt",
-      "REST API",
-    ],
-  },
-  {
-    title: "NetScan-Pro",
-    description:
-      "Bash-based network scanning tool that provides live host discovery, port scanning, traceroute, and ping tests, featuring visually appealing ASCII banners and 80+ star at GitHub",
-    image: project2,
-    github: "https://github.com/niladri-1/NetScan-Pro",
-    live: "",
-    tags: ["Linux", "Bash", "Networking", "Monitoring", "NMAP", "Scripting"],
-  },
-  {
-    title: "Student Portfolio",
-    description:
-      "A professional portfolio template for engineering students. Easy to set up, fully customizable, and perfect for showcasing projects and skills.",
+      "Full-stack platform that connects companies and candidates. Features advanced job search, profile management, and scalable backend architecture.",
     image: project1,
-    github: "https://github.com/niladri-1/Frontend-develope-portfolio",
-    live: "https://techfolio1.vercel.app",
-    tags: ["Next", "Tailwind CSS", "TypeScript", "ThreeJS", "Responsive"],
+    github: "https://github.com/Vivaldi-Dev",
+    live: "http://easyjob.jstechnology.co.mz/",
+    tags: [
+      "Django",
+      "React",
+      "PostgreSQL",
+      "REST API",
+      "Full Stack",
+    ],
+  },
+  {
+    title: "Black View E-commerce",
+    description:
+      "E-commerce backend system built with Spring Boot, featuring secure authentication (JWT, OAuth2), product and order management, and optimized performance.",
+    image: project2,
+    github: "https://github.com/Vivaldi-Dev",
+    live: "https://blackview.co.mz/",
+    tags: [
+      "Spring Boot",
+      "Java",
+      "PostgreSQL",
+      "JWT",
+      "OAuth2",
+      "Backend",
+    ],
+  },
+  {
+    title: "Attendance Management System (Mobile)",
+    description:
+      "Mobile and backend system for attendance tracking with real-time synchronization, secure authentication, and RESTful APIs.",
+    image: project3,
+    github: "https://github.com/Vivaldi-Dev",
+    live: "",
+    tags: [
+      "React Native",
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "JWT",
+      "Mobile",
+    ],
+  },
+  {
+    title: "Flight Search Platform",
+    description:
+      "Full-stack application for real-time flight search and booking simulation using Amadeus API, with secure authentication and modern UI.",
+    image: project4,
+    github: "https://github.com/Vivaldi-Dev",
+    live: "",
+    tags: [
+      "Next.js",
+      "Node.js",
+      "Amadeus API",
+      "Full Stack",
+      "Authentication",
+    ],
+  },
+
+  {
+    title: "Atlantic Travel Website",
+    description:
+      "Full-stack web platform for a travel agency featuring flight simulation, travel packages, and dynamic booking experiences. Built with modern web technologies, focusing on performance, scalability, and user experience.",
+    image: project2,
+    github: "https://github.com/Vivaldi-Dev",
+    live: "https://atlantictravel.co.mz/",
+    tags: [
+      "Next.js",
+      "Node.js",
+      "Full Stack",
+      "Travel Platform",
+      "API Integration",
+      "Responsive UI",
+    ],
   },
 ];
 
@@ -74,11 +100,7 @@ const Projects = () => {
         {projects.map((project) => (
           <ScrollAnimation key={project.title}>
             <div className="bg-gray-800/50 rounded-lg overflow-hidden backdrop-blur-sm h-full flex flex-col">
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-48 object-cover"
-              />
+
               <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
                 <p className="text-gray-400 mb-4 flex-grow">

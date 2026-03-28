@@ -15,59 +15,58 @@ const Certificates = lazy(() => import("./pages/Certificates"));
 const Contact = lazy(() => import("./pages/Contact"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
-// Per-page SEO metadata
 const pageMeta = {
   "/": {
-    title: "Niladri Chatterjee - Full Stack Developer | MERN Stack Expert",
+    title: "Vivaldi Nobela - Full Stack Developer | MERN Stack Expert",
     description:
-      "Niladri Chatterjee — Full Stack Developer specializing in MERN stack, React.js, Node.js, Next.js and TypeScript. Based in Kolkata, India.",
+      "Vivaldi Nobela — Full Stack Developer specializing in MERN stack, React.js, Node.js, Next.js and TypeScript. Based in Kolkata, India.",
   },
   "/about": {
-    title: "About - Niladri Chatterjee | Full Stack Developer",
+    title: "About - Vivaldi Nobela | Full Stack Developer",
     description:
-      "Learn about Niladri Chatterjee — B.Tech Computer Science graduate, Full Stack Developer with 3+ internships and 10+ projects. Based in Kolkata, India.",
+      "Learn about Vivaldi Nobela — B.Tech Computer Science graduate, Full Stack Developer with 3+ internships and 10+ projects. Based in Kolkata, India.",
   },
   "/projects": {
-    title: "Projects - Niladri Chatterjee | Full Stack Developer Portfolio",
+    title: "Projects - Vivaldi Nobela | Full Stack Developer Portfolio",
     description:
-      "Explore full-stack web projects built by Niladri Chatterjee using React.js, Node.js, MongoDB, Next.js and TypeScript.",
+      "Explore full-stack web projects built by Vivaldi Nobela using React.js, Node.js, MongoDB, Next.js and TypeScript.",
   },
   "/skills": {
-    title: "Skills - Niladri Chatterjee | React, Node.js, MERN Stack",
+    title: "Skills - Vivaldi Nobela | React, Node.js, MERN Stack",
     description:
-      "Technical skills of Niladri Chatterjee — React.js, Node.js, Express, MongoDB, Next.js, TypeScript, AWS, Docker and more.",
+      "Technical skills of Vivaldi Nobela — React.js, Node.js, Express, MongoDB, Next.js, TypeScript, AWS, Docker and more.",
   },
   "/experience": {
-    title: "Experience - Niladri Chatterjee | Full Stack Developer",
+    title: "Experience - Vivaldi Nobela | Full Stack Developer",
     description:
-      "Professional experience of Niladri Chatterjee including 3+ internships in full stack web development.",
+      "Professional experience of Vivaldi Nobela including 3+ internships in full stack web development.",
   },
   "/education": {
-    title: "Education - Niladri Chatterjee | B.Tech Computer Science",
+    title: "Education - Vivaldi Nobela | B.Tech Computer Science",
     description:
-      "Educational background of Niladri Chatterjee — B.Tech in Computer Science with 8.48 CGPA.",
+      "Educational background of Vivaldi Nobela — B.Tech in Computer Science with 8.48 CGPA.",
   },
   "/certificates": {
-    title: "Certificates - Niladri Chatterjee | Developer Certifications",
+    title: "Certificates - Vivaldi Nobela | Developer Certifications",
     description:
-      "Professional certifications and achievements of Niladri Chatterjee in web development and cloud technologies.",
+      "Professional certifications and achievements of Vivaldi Nobela in web development and cloud technologies.",
   },
   "/contact": {
-    title: "Contact - Niladri Chatterjee | Hire a Full Stack Developer",
+    title: "Contact - Vivaldi Nobela | Hire a Full Stack Developer",
     description:
-      "Get in touch with Niladri Chatterjee for freelance projects, job opportunities or collaborations. Based in Kolkata, India.",
+      "Get in touch with Vivaldi Nobela for freelance projects, job opportunities or collaborations. Based in Kolkata, India.",
   },
 };
 
-// Hook to update document title + meta description on route change
+
 function SEOUpdater() {
   const location = useLocation();
 
   useEffect(() => {
     const meta = pageMeta[location.pathname] || {
-      title: "Niladri Chatterjee - Full Stack Developer",
+      title: "Vivaldi Nobela - Full Stack Developer",
       description:
-        "Portfolio of Niladri Chatterjee — Full Stack Developer specializing in MERN stack and modern web technologies.",
+        "Portfolio of Vivaldi Nobela — Full Stack Developer specializing in MERN stack and modern web technologies.",
     };
 
     document.title = meta.title;

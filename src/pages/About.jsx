@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Code2, Briefcase, GraduationCap, Globe } from "lucide-react";
 import { ScrollAnimation } from "@/components/ScrollAnimation";
 import profileImg from "@/assets/profile/profile.jpg";
-import cvPdf from "@/assets/files/cv_pdf/Niladri_Chatterjee(CV).pdf";
+import cvPdf from "@/assets/files/cv_pdf/VivaldiAfonsoNobelaJrResumev2.pdf";
 
 const About = () => {
   const achievements = [
@@ -17,20 +17,14 @@ const About = () => {
       title: "3+ Internships",
       description: "Professional work experience",
     },
-    {
-      icon: <GraduationCap className="w-6 h-6" />,
-      title: "8.48 CGPA",
-      description: "Academic excellence",
-    },
   ];
 
   const interests = [
     "Web Development",
-    "UI/UX Design",
+    "Full Stack Developer",
     "Cloud Computing",
     "DevOps",
     "Open Source",
-    "Artificial Intelligence",
   ];
 
   return (
@@ -45,7 +39,7 @@ const About = () => {
         <ScrollAnimation>
           <div className="aspect-square overflow-hidden rounded-2xl">
             <img
-              src={profileImg}
+              src='/Image3.jpeg'
               alt="Niladri Chatterjee"
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
             />
@@ -55,48 +49,17 @@ const About = () => {
         <ScrollAnimation className="space-y-6">
           <div className="space-y-4">
             <p className="text-gray-300 leading-relaxed">
-              Hi! I'm a passionate full-stack developer with expertise in
-              building modern web applications. My journey in tech started
-              during my college years, where I discovered my love for creating
-              innovative solutions through code.
+              Hi! I'm a Full Stack Developer, Cloud Engineer, and Mobile Developer based in Maputo, Mozambique, with 4+ years of experience building scalable and reliable applications. I enjoy turning complex problems into simple, efficient, and maintainable solutions.
             </p>
             <p className="text-gray-300 leading-relaxed">
-              I completed my B.Tech in Computer Science, maintaining a strong
-              academic record while actively engaging in real-world projects and
-              internships. This blend of theoretical knowledge and practical
-              experience has shaped my approach to problem-solving and software
-              development.
+              My expertise spans web, mobile, and cloud. I have hands-on experience building modern web applications, developing mobile apps with React Native and Jetpack Compose, and designing backend systems and APIs that scale.
             </p>
             <p className="text-gray-300 leading-relaxed">
-              I specialize in React, Node.js, and modern web technologies, with
-              a keen interest in creating performant and user-friendly
-              applications. My experience includes working with various startups
-              and contributing to open-source projects.
+              I work with technologies like React, Node.js, React Native, and cloud platforms to deliver high-performance applications. I'm passionate about system design, clean architecture, and continuously improving my skills to build impactful digital products.
             </p>
           </div>
 
-          <ScrollAnimation>
-            <div className="pt-4">
-              <h3 className="text-2xl font-semibold mb-4 gradient-text">
-                Quick Facts
-              </h3>
-              <ul className="list-none space-y-3">
-                {[
-                  "Based in Kolkata, WB, India",
-                  "B.Tech in Computer Science",
-                  "CGPA: 8.48",
-                ].map((fact) => (
-                  <motion.li
-                    key={fact}
-                    className="flex items-center space-x-2 text-gray-300"
-                  >
-                    <span className="w-2 h-2 bg-white rounded-full" />
-                    <span>{fact}</span>
-                  </motion.li>
-                ))}
-              </ul>
-            </div>
-          </ScrollAnimation>
+          
 
           <ScrollAnimation>
             <div className="flex justify-start space-x-4">

@@ -9,30 +9,24 @@ import hsMarkSheetPdf from '@/assets/files/education_pdf/HS MARK SHEET.pdf'
 const Education = () => {
   const educationData = [
     {
-      school: 'Bengal College of Engineering and Technology',
-      location: 'Durgapur, WB, India',
-      duration: 'July 2020 - June 2024',
-      degree: 'B.Tech (Computer Science and Engineering)',
-      grade: 'CGPA: 8.48 (80%)',
+      school: 'Universidade São Tomás de Moçambique',
+      location: 'Maputo, Mozambique',
+      duration: '2020 - 2026',
+      degree: 'Bachelor’s Degree in Software Development',
       image: collegeImg,
       resultUrl: bTechPdf,
-      coursework: ["Software Development", 'DSA', 'OOPs', 'DBMS', 'AI', 'ML', 'OS', 'Networking'],
+      coursework: [
+        'Software Development',
+        'Data Structures & Algorithms',
+        'Object-Oriented Programming',
+        'Databases',
+        'Operating Systems',
+        'Computer Networks'
+      ],
       description:
-        'During my time at BCET, I have built a strong foundation in computer science, focusing on software development, problem-solving, and real-world applications. Engaging in hands-on projects, internships, and coding challenges has helped me enhance my technical and analytical skills.',
+        'Currently completing my degree in Computer Science, with a strong focus on software development. Throughout my studies, I have worked on practical projects that strengthened my skills in building web and mobile applications, as well as understanding core computer science concepts.',
     },
-    {
-      school: 'Birsingha Bhagabati Vidyalaya (H.S)',
-      location: 'Medinipur, WB, India',
-      duration: 'June 2018 - July 2019',
-      degree: 'Higher Secondary (WBSC)',
-      grade: 'Percentage: 79%',
-      image: schoolImg,
-      resultUrl: hsMarkSheetPdf,
-      subjects: ['Physics', 'Chemistry', 'Mathematics', 'Biology', 'Computer Science'],
-      description:
-        'My higher secondary education laid the foundation for my technical journey, strengthening my analytical thinking and problem-solving abilities. The strong emphasis on mathematics and computer science has been instrumental in shaping my passion for software development.',
-    },
-  ]
+  ];
 
   return (
     <div className="min-h-screen pt-20 px-4 max-w-6xl mx-auto pb-20">
@@ -55,18 +49,17 @@ const Education = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: index * 0.2 }}
-              className="relative bg-gray-800/50 rounded-xl overflow-hidden backdrop-blur-sm hover:bg-gray-800/70 transition-all"
-            >
+              className="relative bg-gray-800/50 rounded-xl overflow-hidden backdrop-blur-sm hover:bg-gray-800/70 transition-all">
               <div className="absolute top-0 right-0 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-bl-xl flex items-center gap-2">
                 <Calendar className="w-4 h-4 text-gray-300" />
                 <span className="text-gray-300">{edu.duration}</span>
               </div>
 
               <div className="grid md:grid-cols-[350px,1fr]">
-                {/* Left Column - Image */}
+
                 <div className="relative h-96 md:h-full">
                   <img
-                    src={edu.image}
+                    src={'/logo100marco.png'}
                     alt={edu.school}
                     className="w-full h-full object-cover"
                   />
@@ -85,7 +78,6 @@ const Education = () => {
                   </div>
                 </div>
 
-                {/* Right Column - Content */}
                 <div className="p-6">
                   <div className="flex items-center gap-2 mb-4">
                     <BookOpen className="w-5 h-5 text-gray-400" />
@@ -121,16 +113,6 @@ const Education = () => {
                     </div>
                   )}
 
-                  <motion.a
-                    href={edu.resultUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-6 py-2.5 bg-white/10 hover:bg-white/20 rounded-lg transition-all text-sm font-medium"
-                    whileHover={{ scale: 1.02 }}
-                  >
-                    View Result
-                    <ExternalLink className="w-4 h-4" />
-                  </motion.a>
                 </div>
               </div>
             </motion.div>

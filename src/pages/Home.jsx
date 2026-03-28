@@ -12,14 +12,14 @@ import {
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import useSWR from "swr";
-import cvPdf from "@/assets/files/cv_pdf/Niladri_Chatterjee(CV).pdf";
+import cvPdf from "@/assets/files/cv_pdf/VivaldiAfonsoNobelaJrResumev2.pdf";
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
 const Home = () => {
   const [copied, setCopied] = useState(false);
-  const email = "code.niladri@gmail.com";
-  const whatsappNumber = "+916296554939";
+  const email = "nobelavivaldi@gmail.com";
+  const whatsappNumber = "+25849203860";
 
   const { data: githubData } = useSWR(
     "https://api.github.com/users/niladri-1",
@@ -66,25 +66,22 @@ const Home = () => {
           className="text-4xl sm:text-6xl md:text-8xl font-bold mb-4 sm:mb-6 relative tracking-tighter"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          Niladri Chatterjee
+          transition={{ duration: 0.8 }}>
+         Vivaldi Nobela
         </motion.h1>
         <motion.h1
           className="text-2xl sm:text-4xl md:text-6xl font-bold mb-4 sm:mb-6 relative tracking-tighter"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          I design & code for web
+          transition={{ duration: 0.8 }}>
+         Cloud & Full Stack Developer
         </motion.h1>
 
         <motion.p
           className="text-lg sm:text-xl md:text-2xl text-gray-400 mb-4 sm:mb-5 max-w-2xl mx-auto px-2 sm:px-4"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-        >
+          transition={{ duration: 0.8, delay: 0.2 }}>
           Software Developer specializing in Full Stack Development with
           expertise in React.js, Node.js and modern Web Technologies.
         </motion.p>
@@ -93,15 +90,13 @@ const Home = () => {
           className="flex flex-col items-center gap-4 sm:gap-6"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-        >
+          transition={{ duration: 0.8, delay: 0.4 }}>
           <div className="flex justify-center space-x-3 sm:space-x-4">
             <a
               href={cvPdf}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 sm:px-6 py-2.5 sm:py-3 bg-white text-black rounded-full text-sm sm:text-base font-medium hover:bg-gray-100 transition-colors flex items-center gap-2"
-            >
+              className="px-4 sm:px-6 py-2.5 sm:py-3 bg-white text-black rounded-full text-sm sm:text-base font-medium hover:bg-gray-100 transition-colors flex items-center gap-2">
               <FileDown className="w-4 h-4 sm:w-5 sm:h-5" aria-hidden="true" />
               Download CV
             </a>
@@ -147,16 +142,14 @@ const Home = () => {
           className="grid grid-cols-3 justify-items-center gap-6 mt-8 sm:mt-12 max-w-xs sm:max-w-none mx-auto"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-        >
+          transition={{ duration: 0.8, delay: 0.6 }}>
           <motion.a
-            href="https://github.com/niladri-1"
+            href="https://github.com/Vivaldi-Dev"
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-col items-center group w-full"
             whileHover={{ y: -2 }}
-            aria-label="Visit GitHub profile"
-          >
+            aria-label="Visit GitHub profile">
             <div className="p-3 rounded-xl transition-colors mb-2 w-full max-w-[200px]">
               <Github className="w-5 h-5 sm:w-6 sm:h-6 text-gray-400 group-hover:text-white transition-colors mx-auto" />
             </div>
@@ -176,7 +169,7 @@ const Home = () => {
           </motion.a>
 
           <motion.a
-            href="https://linkedin.com/in/niladri1"
+            href="https://www.linkedin.com/in/vivaldi-nobela-8767ab28b/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-col items-center group w-full"
@@ -192,7 +185,7 @@ const Home = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8 }}
             >
-              <span className="text-base sm:text-lg font-semibold">4000+</span>
+              <span className="text-base sm:text-lg font-semibold">500+</span>
               <span className="text-xs sm:text-sm text-gray-400">
                 LinkedIn Followers
               </span>

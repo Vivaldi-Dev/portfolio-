@@ -25,18 +25,16 @@ const Footer = () => {
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 py-12">
-          {/* Branding */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center space-x-3">
               <Code2 className="w-8 h-8 text-white" aria-hidden="true" />
-              <span className="text-xl font-bold text-white">Niladri Chatterjee</span>
+              <span className="text-xl font-bold text-white">Vivaldi Nobela </span>
             </Link>
             <p className="text-sm text-gray-400">
-              Software Developer based in Kolkata, WB, India.
+              Full Stack Developer & Cloud Engineer based in Maputo, Mozambique.
             </p>
           </div>
 
-          {/* Contact */}
           <div className="space-y-4">
             <h3 className="text-sm font-semibold text-white">Contact</h3>
             <ul className="space-y-3">
@@ -44,26 +42,24 @@ const Footer = () => {
                 <a
                   href="mailto:code.niladri@gmail.com"
                   className="text-sm text-gray-400 hover:text-white transition-colors flex items-center gap-2"
-                  aria-label="Email Niladri Chatterjee"
-                >
+                  aria-label="Email Niladri Chatterjee">
                   <Mail className="w-4 h-4" aria-hidden="true" />
-                  code.niladri@gmail.com
+                  nobelavivaldi@gmail.com
                 </a>
               </li>
               <li>
                 <a
-                  href="tel:+916296554939"
+                  href="tel:+258849203860"
                   className="text-sm text-gray-400 hover:text-white transition-colors flex items-center gap-2"
                   aria-label="Call Niladri Chatterjee"
                 >
                   <Phone className="w-4 h-4" aria-hidden="true" />
-                  +916296554939
+                  +258849203860
                 </a>
               </li>
             </ul>
           </div>
 
-          {/* Quick Links */}
           <div className="space-y-4">
             <h3 className="text-sm font-semibold text-white">Quick Links</h3>
             <div className="grid grid-cols-3 gap-x-6 gap-y-3">
@@ -89,26 +85,16 @@ const Footer = () => {
                   </Link>
                 ))}
               </div>
-              <div>
-                {column3.map((link) => (
-                  <Link
-                    key={link.path}
-                    to={link.path}
-                    className="block text-sm text-gray-400 hover:text-white transition-colors mb-2"
-                  >
-                    {link.name}
-                  </Link>
-                ))}
-              </div>
+
             </div>
           </div>
 
-          {/* Social */}
+
           <div className="space-y-4">
             <h3 className="text-sm font-semibold text-white">Social</h3>
             <div className="flex space-x-4">
               <a
-                href="https://github.com/niladri-1"
+                href="https://github.com/Vivaldi-Dev"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors"
@@ -117,16 +103,15 @@ const Footer = () => {
                 <Github className="w-5 h-5" aria-hidden="true" />
               </a>
               <a
-                href="https://linkedin.com/in/niladri1"
+                href="https://www.linkedin.com/in/vivaldi-nobela-8767ab28b/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors"
-                aria-label="LinkedIn profile"
-              >
+                aria-label="LinkedIn profile">
                 <Linkedin className="w-5 h-5" aria-hidden="true" />
               </a>
               <a
-                href="mailto:code.niladri@gmail.com"
+                href="mailto:nobelavivaldi@gmail.com"
                 className="text-gray-400 hover:text-white transition-colors"
                 aria-label="Email"
               >
@@ -140,14 +125,14 @@ const Footer = () => {
         <div className="border-t border-white/10 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-gray-400">
-              © {currentYear} Niladri Chatterjee. All rights reserved.
+              © {currentYear} Vivaldi-DEV. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <span className="text-sm text-gray-400 flex items-center gap-2">
                 <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
                   <path d="M12 1L24 22H0L12 1Z" />
                 </svg>
-                Niladri's Portfolio
+                Vivaldi-DEV.
               </span>
             </div>
           </div>
