@@ -9,6 +9,8 @@ import {
   Terminal,
   Wrench,
   Users,
+  Monitor,
+  Activity,
 } from "lucide-react";
 import { ScrollAnimation } from "@/components/ScrollAnimation";
 import {
@@ -52,6 +54,7 @@ const skills = [
     icon: <Layout className="w-6 h-6" />,
     items: [
       { name: "React.js", icon: <ReactLogo /> },
+      { name: "React Native", icon: <ReactLogo /> },
       { name: "Next.js", icon: <NextjsLogo /> },
       { name: "Tailwind", icon: <TailwindLogo /> },
       { name: "Redux", icon: <ReduxLogo /> },
@@ -63,27 +66,49 @@ const skills = [
     items: [
       { name: "Node.js", icon: <NodeLogo /> },
       { name: "Express", icon: <ExpressLogo /> },
+      { name: "Spring Boot", icon: <Server className="w-4 h-4" /> },
+      { name: "Django", icon: <PythonLogo /> },
       { name: "JWT", icon: <JWTLogo /> },
       { name: "Bcrypt", icon: <BcryptLogo /> },
     ],
   },
   {
-    category: "Databases & Cloud Storage",
+    category: "Databases & Search",
     icon: <Database className="w-6 h-6" />,
     items: [
       { name: "MongoDB", icon: <MongoDBLogo /> },
-      { name: "Cloudinary", icon: <Cloud className="w-4 h-4" /> },
-      { name: "AWS", icon: <AWSLogo /> },
+      { name: "Elasticsearch", icon: <Database className="w-4 h-4" /> },
     ],
   },
   {
-    category: "Version Control & DevOps",
-    icon: <GitLogo />,
+    category: "Cloud & Hosting",
+    icon: <Cloud className="w-6 h-6" />,
     items: [
-      { name: "Git", icon: <GitLogo /> },
-      { name: "GitHub", icon: <GitLogo /> },
+      { name: "AWS", icon: <AWSLogo /> },
+      { name: "Linode / Akamai", icon: <Cloud className="w-4 h-4" /> },
+      { name: "Digital Ocean", icon: <Cloud className="w-4 h-4" /> },
       { name: "Vercel", icon: <VercelLogo /> },
       { name: "Render", icon: <RenderLogo /> },
+    ],
+  },
+  {
+    category: "DevOps & Containers",
+    icon: <Terminal className="w-6 h-6" />,
+    items: [
+      { name: "Docker", icon: <Terminal className="w-4 h-4" /> },
+      { name: "Docker Compose", icon: <Terminal className="w-4 h-4" /> },
+      { name: "Kubernetes", icon: <Terminal className="w-4 h-4" /> },
+      { name: "Git", icon: <GitLogo /> },
+      { name: "GitHub", icon: <GitLogo /> },
+    ],
+  },
+  {
+    category: "Monitoring & Observability",
+    icon: <Activity className="w-6 h-6" />,
+    items: [
+      { name: "Grafana", icon: <Activity className="w-4 h-4" /> },
+      { name: "Prometheus", icon: <Activity className="w-4 h-4" /> },
+      { name: "Loki", icon: <Monitor className="w-4 h-4" /> },
     ],
   },
   {
@@ -91,14 +116,14 @@ const skills = [
     icon: <Wrench className="w-6 h-6" />,
     items: [
       { name: "VS Code", icon: <VSCodeLogo /> },
-      { name: "Git Desktop", icon: <GitLogo /> },
-      { name: "Compass", icon: <MongoDBLogo /> },
       { name: "Postman", icon: <PostmanLogo /> },
+      { name: "Compass", icon: <MongoDBLogo /> },
+      { name: "Git Desktop", icon: <GitLogo /> },
     ],
   },
   {
     category: "Operating Systems",
-    icon: <Terminal className="w-6 h-6" />,
+    icon: <Monitor className="w-6 h-6" />,
     items: [
       { name: "Windows", icon: <WindowsLogo className="w-4 h-4" /> },
       { name: "Ubuntu", icon: <UbuntuLogo className="w-4 h-4" /> },
@@ -144,10 +169,7 @@ const Skills = () => {
               </div>
               <div className="grid grid-cols-2 gap-4">
                 {skillGroup.items.map((skill) => (
-                  <div
-                    key={skill.name}
-                    className="bg-gray-700/50 px-4 py-3 rounded-lg flex items-center justify-center gap-2 hover:bg-white/10 transition-all group"
-                  >
+                  <div key={skill.name} className="bg-gray-700/50 px-4 py-3 rounded-lg flex items-center justify-center gap-2 hover:bg-white/10 transition-all group">
                     <div className="text-gray-400 group-hover:text-white transition-colors">
                       {skill.icon}
                     </div>
